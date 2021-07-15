@@ -22,6 +22,10 @@ class PatternExtractor implements PatternExtractorInterface
     }
 
 
+
+
+
+
     //     //   <--------perdarom i masiva be skaiciu-------->
     //   public function  valueNoNumbers($values) {
 

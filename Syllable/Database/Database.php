@@ -15,8 +15,6 @@ class Database
 
     public function connect():PDO
     {
-
-
         try {
             $dsn = "mysql:host=$this->serverName;dbname=$this->database;charset=$this->charset;";  //data source name
 
