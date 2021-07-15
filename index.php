@@ -4,15 +4,10 @@ require __DIR__.'/bootstrap.php';
 
 use  Syllable\App\Application;
 
-// Echo "If you want to syllable sentence press Esc and write index.php --sentence";
+var_dump(function_exists('mysqli_connect'));
+//mysql  Ver 8.0.25-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
 
-// if($argc > 1 && ($argv[1] == '--sentence' || $argv[1] == '--aaa')){
-//     echo "Enter the date you want to see the vaccination list: ";
-
-    
-//     };
-    
-    // exit(0);
+print_r(PDO::getAvailableDrivers());
 
 $runApp = new Application();
 $runApp->runApp();

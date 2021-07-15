@@ -1,6 +1,7 @@
 <?php
 namespace Syllable\App;
 
+use Syllable\Database\Database;
 use Psr\Log\Logger;
 use Syllable\App;
 use Syllable\Service\SyllableAlgorithm;
@@ -15,6 +16,9 @@ class Application
 {
     public function runApp ()
     {
+
+        $db = new Database();
+        $db->connect();
 
         
         $userInput = new UserInput;
