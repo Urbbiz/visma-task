@@ -1,11 +1,11 @@
 <?php
 
 namespace Syllable\PatternModel;
-//use  Syllable\PatternModel;
+
 
 class PatternCollection {
 
-    private array $patterns;
+    private array $patterns=[];
 
 
     function addPattern(Pattern $pattern): void

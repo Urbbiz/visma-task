@@ -15,6 +15,8 @@ use Syllable\IO\UserInput;
 
 class Application
 {
+
+
     public function runApp ()
     {
 
@@ -93,9 +95,13 @@ class Application
 
         }elseif ($input == 3){
 
+$patternsCollection = $databaseManager->getAllPatterns();
 
+if(count($patternsCollection->getPatterns())==0) {
     $databaseManager->setPatternsToDatabase(DIR . "data/inputfile.txt");
+}
 
+                $databaseManager->getAllPatterns();
             $givenWord = $userInput->getInputWord();  // paduoda ivesta zodi
 
             $wordInDatabase = $databaseManager->getWord($givenWord);
@@ -127,6 +133,7 @@ class Application
             $databaseManager->deleteConnectionTableData();
             $databaseManager->deleteWordsTableData();
             $databaseManager->deletePatternsData();
+
         }
     }
 
